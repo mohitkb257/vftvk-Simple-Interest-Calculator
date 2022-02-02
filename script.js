@@ -6,8 +6,8 @@ function compute()
 
 var slider = document.getElementById("rate");
 var output = document.getElementById("rateDisplay");
-output.innerHTML = concat(slider.value,"%");
+output.innerHTML = slider.value;
 
 slider.oninput = function() {
-	output.innerHTML = concat(this.value,"%");
+	output.innerHTML = this.value;
 }
